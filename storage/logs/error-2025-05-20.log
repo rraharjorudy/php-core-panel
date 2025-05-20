@@ -1,0 +1,2 @@
+[2025-05-20 06:46:26] ERROR: App\Core\Router::dispatch(): Argument #1 ($method) must be of type string, null given, called in C:\php-workspace\userManagement\public\index.php on line 24
+[2025-05-20 06:55:26] ERROR: Too few arguments to function App\Modules\Auth\Controllers\AuthController::__construct(), 0 passed in C:\php-workspace\userManagement\src\Core\Router.php on line 70 and exactly 1 expected

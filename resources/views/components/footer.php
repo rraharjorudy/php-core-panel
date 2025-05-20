@@ -1,0 +1,12 @@
+<script src="<?= base_url('assets/libs/jquery/dist/jquery.min.js') ?>"></script>
+<script src="<?= base_url('assets/libs/simplebar/dist/simplebar.min.js') ?>"></script>
+<script src="<?= base_url('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') ?>"></script>
+<!-- core files -->
+<script src="<?= base_url('assets/js/app.min.js') ?>"></script>
+<script src="<?= base_url('assets/js/app.init.js') ?>"></script>
+<script src="<?= base_url('assets/js/app-style-switcher.js') ?>"></script>
+<script src="<?= base_url('assets/js/sidebarmenu.js') ?>"></script>
+<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+<!-- current page js files -->
+<!-- <script src="<?= base_url('assets/libs/apexcharts/dist/apexcharts.min.js') ?>"></script> -->
+<script src="<?= base_url('assets/js/dashboard5.js') ?>"></script>
