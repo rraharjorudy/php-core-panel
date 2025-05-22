@@ -4,7 +4,7 @@ namespace App\Core;
 
 class Router
 {
-    
+
     protected array $routes = [];
     protected string $prefix = '';
     protected array $middlewares = [];
@@ -42,6 +42,7 @@ class Router
     protected function addRoute(string $method, string $uri, array $action, array $middleware = [])
     {
         $normalizedUri = trim($this->prefix . '/' . trim($uri, '/'), '/');
+
         $this->routes[$method][$normalizedUri] = [
             'action' => $action,
             'middleware' => $middleware,
@@ -52,84 +53,79 @@ class Router
     {
         $uri = $this->normalizeUri($uri);
 
-        if (isset($this->routes[$method][$uri])) {
-            $route = $this->routes[$method][$uri];
-            [$class, $methodName] = $route['action'];
-            $middlewares = $route['middleware'];
-
-            // Handle middleware
-            foreach ($middlewares as $middlewareClass) {
-                if (class_exists($middlewareClass)) {
-                    $middleware = new $middlewareClass();
-                    if (method_exists($middleware, 'handle')) {
-                        $middleware->handle();
-                    }
-                }
-            }
-
-            if (class_exists($class)) {
-                $controller = new $class();
-                if (method_exists($controller, $methodName)) {
-                    return $controller->$methodName();
-                }
-
-                http_response_code(500);
-                echo "Method $methodName not found in controller " . get_class($controller);
-            } else {
-                http_response_code(500);
-                echo "Controller class $class not found.";
-            }
-        } else {
+        if (!isset($this->routes[$method])) {
             http_response_code(404);
             echo "Route $uri not defined.";
+            return;
         }
+
+        foreach ($this->routes[$method] as $routePattern => $route) {
+            $matches = [];
+            $patternRegex = $this->convertPatternToRegex($routePattern, $matches);
+
+            if (preg_match($patternRegex, $uri, $params)) {
+                array_shift($params); // Remove full match
+
+                [$class, $methodName] = $route['action'];
+                $middlewares = $route['middleware'];
+
+                // Run middlewares (with param support)
+                $this->runMiddlewares($middlewares);
+
+                // Call controller
+                if (class_exists($class)) {
+                    $controller = new $class();
+                    if (method_exists($controller, $methodName)) {
+                        return $controller->$methodName(...$params);
+                    }
+
+                    http_response_code(500);
+                    echo "Method $methodName not found in controller " . get_class($controller);
+                    return;
+                }
+
+                http_response_code(500);
+                echo "Controller class $class not found.";
+                return;
+            }
+        }
+
+        http_response_code(404);
+        echo "Route $uri not defined.";
     }
 
     protected function normalizeUri(string $uri): string
     {
         return trim(parse_url($uri, PHP_URL_PATH), '/');
     }
+
+    protected function convertPatternToRegex(string $pattern, array &$matches = []): string
+    {
+        $pattern = preg_replace_callback('/\{(\w+)\}/', function ($m) use (&$matches) {
+            $matches[] = $m[1];
+            return '([^/]+)';
+        }, $pattern);
+
+        return '#^' . $pattern . '$#';
+    }
+
+    protected function runMiddlewares(array $middlewares): void
+    {
+        foreach ($middlewares as $middlewareClass) {
+            $params = null;
+
+            if (str_contains($middlewareClass, ':')) {
+                [$middlewareClassName, $params] = explode(':', $middlewareClass, 2);
+            } else {
+                $middlewareClassName = $middlewareClass;
+            }
+
+            if (class_exists($middlewareClassName)) {
+                $middleware = $params ? new $middlewareClassName($params) : new $middlewareClassName();
+                if (method_exists($middleware, 'handle')) {
+                    $middleware->handle();
+                }
+            }
+        }
+    }
 }
-
-
-
-/**
- * Old Style Router
- */
-// class Router
-// {
-//     protected $routes = [];
-
-//     public function get($uri, $action)
-//     {
-//         $this->routes['GET'][$uri] = $action;
-//     }
-
-//     public function dispatch($method, $uri)
-//     {
-//         $uri = trim(parse_url($uri, PHP_URL_PATH), '/');
-
-//         if (isset($this->routes[$method][$uri])) {
-//             [$module, $controller, $methodName] = explode('@', $this->routes[$method][$uri]);
-
-//             $class = "App\\Modules\\$module\\Controllers\\{$controller}";
-
-//             if (class_exists($class)) {
-//                 $instance = new $class();
-
-//                 if (method_exists($instance, $methodName)) {
-//                     return $instance->$methodName();
-//                 }
-
-//                 http_response_code(500);
-//                 echo "Method $methodName not found.";
-//             } else {
-//                 http_response_code(500);
-//                 echo "Controller $class not found.";
-//             }
-//         } else {
-//             http_response_code(404);
-//             echo "Route $uri not defined.";
-//         }
-//     }
-// }

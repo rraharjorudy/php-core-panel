@@ -10,6 +10,8 @@
     <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/images/logos/favicon.ico'); ?>" />
     <!-- Core Css -->
     <link id="themeColors" rel="stylesheet" href="<?= base_url('assets/css/style.min.css'); ?>" />
+
+    <?php yield_section('styles'); ?>
 </head>
 
 <body>
@@ -146,6 +148,7 @@
     <!-- End Search Bar -->
 
     <?php include base_path('resources/views/components/footer.php'); ?>
+    <?php yield_section('scripts'); ?>
 </body>
 
 </html>

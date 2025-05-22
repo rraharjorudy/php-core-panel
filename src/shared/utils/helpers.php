@@ -53,6 +53,31 @@ if (!function_exists('view')) {
     }
 }
 
+if (!function_exists('start_section')) {
+    function start_section($name)
+    {
+        global $__sections;
+        $__sections[$name] = '';
+        ob_start();
+    }
+}
+
+if (!function_exists('end_section')) {
+    function end_section()
+    {
+        global $__sections;
+        $__sections[array_key_last($__sections)] = ob_get_clean();
+    }
+}
+
+if (!function_exists('yield_section')) {
+    function yield_section($name)
+    {
+        global $__sections;
+        echo $__sections[$name] ?? '';
+    }
+}
+
 if (!function_exists('base_url')) {
     /**
      * Generates a base URL for the application.
@@ -111,5 +136,24 @@ if (!function_exists('flash')) {
             return $message;
         }
         return null;
+    }
+}
+
+if (!function_exists('hasPermission')) {
+    /**
+     * Checks if the user has a specific permission.
+     *
+     * @param string $permission The permission to check.
+     * @return bool True if the user has the permission, false otherwise.
+     */
+    function hasPermission(string $permission): bool
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (!empty($_SESSION['user']['permissions'])) {
+            return in_array($permission, $_SESSION['user']['permissions']);
+        }
+        return false;
     }
 }

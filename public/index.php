@@ -14,7 +14,7 @@ Bootstrap::init();
 Database::connect();
 
 try {
-    log_info('Application started'); 
+    log_info('Application started');
     log_info('Request method: ' . $_SERVER['REQUEST_METHOD']);
     log_info('Request URI: ' . $_SERVER['REQUEST_URI']);
     log_info('Request headers: ' . json_encode(getallheaders()));
@@ -25,5 +25,12 @@ try {
 } catch (Throwable $e) {
     http_response_code(500);
     echo "Something went wrong. Please try again later.";
+    echo "<br>";
+    echo "Error message: " . $e->getMessage();
+    echo "<br>";
+    echo "Error file: " . $e->getFile();
+    echo "<br>";
+    echo "Error line: " . $e->getLine();
+
     log_error($e->getMessage());
 }

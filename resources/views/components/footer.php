@@ -7,6 +7,3 @@
 <script src="<?= base_url('assets/js/app-style-switcher.js') ?>"></script>
 <script src="<?= base_url('assets/js/sidebarmenu.js') ?>"></script>
 <script src="<?= base_url('assets/js/custom.js') ?>"></script>
-<!-- current page js files -->
-<!-- <script src="<?= base_url('assets/libs/apexcharts/dist/apexcharts.min.js') ?>"></script> -->
-<script src="<?= base_url('assets/js/dashboard5.js') ?>"></script>
