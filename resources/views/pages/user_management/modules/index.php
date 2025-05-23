@@ -9,11 +9,11 @@
     <div class="card-body px-4 py-3">
         <div class="row align-items-center">
             <div class="col-9">
-                <h4 class="fw-semibold mb-8">Role</h4>
+                <h4 class="fw-semibold mb-8">Module</h4>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a class="text-muted " href="<?= base_url('') ?>">Dashboard</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Role</li>
+                        <li class="breadcrumb-item" aria-current="page">Module</li>
                     </ol>
                 </nav>
             </div>
@@ -43,7 +43,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <a href="<?= base_url('roles/create'); ?>" class="btn btn-primary mb-4">
+                    <a href="<?= base_url('modules/create'); ?>" class="btn btn-primary mb-4">
                         <i class="ti ti-plus fs-4"></i>&nbsp; Add new
                     </a>
                     <div class="table-responsive rounded-2 mb-4">
@@ -57,10 +57,10 @@
 
                             </thead>
                             <tbody>
-                                <?php foreach ($roles as $role) : ?>
+                                <?php foreach ($modules as $module) : ?>
                                     <tr>
-                                        <td><?= $role['name'] ?></td>
-                                        <td><?= $role['description'] ?></td>
+                                        <td><?= $module['name'] ?></td>
+                                        <td><?= $module['description'] ?></td>
                                         <td>
                                             <div class="dropdown dropstart">
                                                 <a href="#" class="text-muted" id="dropdownMenuButton" data-bs-toggle="dropdown"
@@ -69,18 +69,18 @@
                                                 </a>
                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                     <li>
-                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="<?= base_url('roles/edit/' . $role['id']) ?>"><i
+                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="<?= base_url('modules/edit/' . $module['id']) ?>"><i
                                                                 class="fs-4 ti ti-edit"></i>Edit</a>
                                                     </li>
                                                     <li>
 
-                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="#" onclick="confirmDelete(<?= $role['id'] ?>, '<?= addslashes($role['name']) ?>')">
+                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="#" onclick="confirmDelete(<?= $module['id'] ?>, '<?= addslashes($module['name']) ?>')">
                                                             <i class="fs-4 ti ti-trash"></i>Delete
                                                         </a>
 
-                                                        <form id="delete-form-role-<?= $role['id'] ?>" action="<?= base_url('roles/delete') ?>" method="POST" style="display: none;">
+                                                        <form id="delete-form-module-<?= $module['id'] ?>" action="<?= base_url('modules/delete') ?>" method="POST" style="display: none;">
                                                             <?= csrf_field() ?>
-                                                            <input type="hidden" name="id" value="<?= $role['id'] ?>">
+                                                            <input type="hidden" name="id" value="<?= $module['id'] ?>">
                                                         </form>
 
                                                     </li>
@@ -103,7 +103,7 @@
 <script src="<?= base_url('assets/libs/sweetalert2/dist/sweetalert2.min.js') ?>"></script>
 <script>
     $(document).ready(function() {
-        console.log('This JS is only for the role page');
+        console.log('This JS is only for the module page');
         $("#zero_config").DataTable({
             columnDefs: [{
                     width: "80px",
@@ -113,11 +113,11 @@
         });
     });
 
-    function confirmDelete(roleId, roleName) {
-        console.log('Delete role with ID:', roleId);
+    function confirmDelete(moduleId, moduleName) {
+        console.log('Delete module with ID:', roleId);
         Swal.fire({
             title: 'Are you sure?',
-            text: `Role "${roleName}" will be permanently deleted!`,
+            text: `Module "${moduleName}" will be permanently deleted!`,
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -126,7 +126,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 // Perform the delete action here
-                document.getElementById(`delete-form-role-${roleId}`).submit();
+                document.getElementById(`delete-form-module-${roleId}`).submit();
             }
         });
     }

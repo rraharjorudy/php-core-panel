@@ -1,0 +1,7 @@
+[2025-05-23 02:40:48] ERROR: App\Modules\UserManagement\Models\RoleModel::getRoleById(): Argument #1 ($id) must be of type int, string given, called in C:\php-workspace\userManagement\src\Modules\UserManagement\Controllers\RoleController.php on line 62
+[2025-05-23 06:57:14] ERROR: App\Modules\UserManagement\Models\RoleModel::getRoleById(): Return value must be of type ?array, stdClass returned
+[2025-05-23 07:09:10] ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user' for key 'roles.name'
+[2025-05-23 07:14:05] ERROR: Error updating role ID 5: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'staff' for key 'roles.name'
+[2025-05-23 07:38:00] ERROR: Error deleting role ID 1: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`db_skeleton_user`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+[2025-05-23 07:38:30] ERROR: Error deleting role ID 1: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`db_skeleton_user`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+[2025-05-23 07:43:17] ERROR: Error deleting role ID 1: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`db_skeleton_user`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))

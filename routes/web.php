@@ -28,7 +28,7 @@ $router->group('roles', function ($router) {
         AuthPermissionMiddleware::class . ':view-role',
     ]);
 
-    $router->get('{id}', [\App\Modules\UserManagement\Controllers\RoleController::class, 'edit'], [
+    $router->get('edit/{id}', [\App\Modules\UserManagement\Controllers\RoleController::class, 'edit'], [
         AuthMiddleware::class,
         AuthPermissionMiddleware::class . ':view-role',
     ]);
@@ -37,6 +37,7 @@ $router->group('roles', function ($router) {
         AuthMiddleware::class,
         AuthPermissionMiddleware::class . ':create-role',
     ]);
+
     $router->post('store', [\App\Modules\UserManagement\Controllers\RoleController::class, 'store'], [
         AuthMiddleware::class,
         AuthPermissionMiddleware::class . ':create-role',
@@ -45,13 +46,49 @@ $router->group('roles', function ($router) {
 
     $router->post('update/{id}', [\App\Modules\UserManagement\Controllers\RoleController::class, 'update'], [
         AuthMiddleware::class,
-        AuthPermissionMiddleware::class . ':edit-role',
+        AuthPermissionMiddleware::class . ':update-role',
         CsrfMiddleware::class,
     ]);
 
-    $router->post('delete/{id}', [\App\Modules\UserManagement\Controllers\RoleController::class, 'delete'], [
+    $router->post('delete', [\App\Modules\UserManagement\Controllers\RoleController::class, 'delete'], [
         AuthMiddleware::class,
         AuthPermissionMiddleware::class . ':delete-role',
+        CsrfMiddleware::class,
+    ]);
+});
+
+$router->group('modules', function ($router) {
+
+    $router->get('', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'index'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':view-module',
+    ]);
+
+    $router->get('edit/{id}', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'edit'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':view-module',
+    ]);
+
+    $router->get('create', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'create'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':create-module',
+    ]);
+
+    $router->post('store', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'store'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':create-module',
+        CsrfMiddleware::class,
+    ]);
+
+    $router->post('update/{id}', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'update'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':update-module',
+        CsrfMiddleware::class,
+    ]);
+
+    $router->post('delete', [\App\Modules\UserManagement\Controllers\ModuleController::class, 'delete'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':delete-module',
         CsrfMiddleware::class,
     ]);
 });
