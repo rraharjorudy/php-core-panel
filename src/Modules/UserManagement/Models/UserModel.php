@@ -34,8 +34,7 @@ class UserModel
             SELECT CONCAT(p.name, '-', m.name) AS permission_name
             FROM role_permissions rp
             JOIN permissions p ON rp.permission_id = p.id
-            JOIN module_permissions mp ON p.id = mp.permission_id
-            JOIN modules m ON mp.module_id = m.id
+            JOIN modules m ON rp.module_id = m.id
             WHERE rp.role_id = :role_id
         ");
         $stmt->execute(['role_id' => $roleId]);

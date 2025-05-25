@@ -41,13 +41,13 @@
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="name" class="control-label col-form-label">Role Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Role Name" required />
+                                <input type="text" class="form-control text-uppercase" id="name" name="name" placeholder="Role Name" required />
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="description" class="control-label col-form-label">Description</label>
-                                <textarea class="form-control p-7" id="description" name="description" cols="20" rows="1" placeholder="Description"></textarea>
+                                <textarea class="form-control p-7 text-capitalize" id="description" name="description" cols="20" rows="1" placeholder="Description"></textarea>
                             </div>
                         </div>
                     </div>

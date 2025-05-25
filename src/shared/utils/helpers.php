@@ -157,3 +157,44 @@ if (!function_exists('hasPermission')) {
         return false;
     }
 }
+
+if (!function_exists('renderModuleRows')) {
+
+    function renderModuleRows($modules, $depth = 0)
+    {
+        foreach ($modules as $module) {
+            $indent = str_repeat('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', $depth); // 4 spaces per level
+            echo "<tr>
+                    <td class=\"text-uppercase\">{$indent}{$module['name']}</td>
+                    <td class=\"text-capitalize\">{$module['description']}</td>
+                    <td>
+                        <div class=\"dropdown dropstart\">
+                            <a href=\"#\" class=\"text-muted\" id=\"dropdownMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+                                <i class=\"ti ti-dots fs-5\"></i>
+                            </a>
+                            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">
+                                <li>
+                                    <a class=\"dropdown-item d-flex align-items-center gap-3\" href=\"" . base_url('modules/edit/' . $module['id']) . "\">
+                                        <i class=\"fs-4 ti ti-edit\"></i>Edit
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class=\"dropdown-item d-flex align-items-center gap-3\" href=\"#\" onclick=\"confirmDelete({$module['id']}, '" . addslashes($module['name']) . "')\">
+                                        <i class=\"fs-4 ti ti-trash\"></i>Delete
+                                    </a>
+                                    <form id=\"delete-form-module-{$module['id']}\" action=\"" . base_url('modules/delete') . "\" method=\"POST\" style=\"display: none;\">
+                                        " . csrf_field() . "
+                                        <input type=\"hidden\" name=\"id\" value=\"{$module['id']}\">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>";
+
+            if (!empty($module['children'])) {
+                renderModuleRows($module['children'], $depth + 1);
+            }
+        }
+    }
+}

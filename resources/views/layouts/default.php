@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
     <!--  Favicon -->
     <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/images/logos/favicon.ico'); ?>" />
+
+    <?php yield_section('styles'); ?>
+
     <!-- Core Css -->
     <link id="themeColors" rel="stylesheet" href="<?= base_url('assets/css/style.min.css'); ?>" />
 
-    <?php yield_section('styles'); ?>
+
 </head>
 
 <body>

@@ -93,4 +93,18 @@ $router->group('modules', function ($router) {
     ]);
 });
 
+$router->group('role-permissions', function ($router) {
+
+    $router->get('', [\App\Modules\UserManagement\Controllers\RolePermissionController::class, 'index'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':view-role_permission',
+    ]);
+
+    $router->post('update', [\App\Modules\UserManagement\Controllers\RolePermissionController::class, 'update'], [
+        AuthMiddleware::class,
+        AuthPermissionMiddleware::class . ':update-role_permission',
+        CsrfMiddleware::class,
+    ]);
+});
+
 return $router;

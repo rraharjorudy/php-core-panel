@@ -57,38 +57,7 @@
 
                             </thead>
                             <tbody>
-                                <?php foreach ($modules as $module) : ?>
-                                    <tr>
-                                        <td><?= $module['name'] ?></td>
-                                        <td><?= $module['description'] ?></td>
-                                        <td>
-                                            <div class="dropdown dropstart">
-                                                <a href="#" class="text-muted" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    <i class="ti ti-dots fs-5"></i>
-                                                </a>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <li>
-                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="<?= base_url('modules/edit/' . $module['id']) ?>"><i
-                                                                class="fs-4 ti ti-edit"></i>Edit</a>
-                                                    </li>
-                                                    <li>
-
-                                                        <a class="dropdown-item d-flex align-items-center gap-3" href="#" onclick="confirmDelete(<?= $module['id'] ?>, '<?= addslashes($module['name']) ?>')">
-                                                            <i class="fs-4 ti ti-trash"></i>Delete
-                                                        </a>
-
-                                                        <form id="delete-form-module-<?= $module['id'] ?>" action="<?= base_url('modules/delete') ?>" method="POST" style="display: none;">
-                                                            <?= csrf_field() ?>
-                                                            <input type="hidden" name="id" value="<?= $module['id'] ?>">
-                                                        </form>
-
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
+                                <?php renderModuleRows($modules); ?>
                             </tbody>
                         </table>
                     </div>
@@ -105,6 +74,7 @@
     $(document).ready(function() {
         console.log('This JS is only for the module page');
         $("#zero_config").DataTable({
+            ordering: false,
             columnDefs: [{
                     width: "80px",
                     targets: -1
@@ -114,7 +84,7 @@
     });
 
     function confirmDelete(moduleId, moduleName) {
-        console.log('Delete module with ID:', roleId);
+        console.log('Delete module with ID:', moduleId);
         Swal.fire({
             title: 'Are you sure?',
             text: `Module "${moduleName}" will be permanently deleted!`,
@@ -126,7 +96,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 // Perform the delete action here
-                document.getElementById(`delete-form-module-${roleId}`).submit();
+                document.getElementById(`delete-form-module-${moduleId}`).submit();
             }
         });
     }

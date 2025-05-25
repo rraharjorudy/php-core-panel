@@ -333,6 +333,14 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
+                            <a href="<?= base_url('role-permissions') ?>" class="sidebar-link">
+                                <div class="round-16 d-flex align-items-center justify-content-center">
+                                    <i class="ti ti-circle"></i>
+                                </div>
+                                <span class="hide-menu">Permission Settings</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
                             <a href="./ui-buttons.html" class="sidebar-link">
                                 <div class="round-16 d-flex align-items-center justify-content-center">
                                     <i class="ti ti-circle"></i>

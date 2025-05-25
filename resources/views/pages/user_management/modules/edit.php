@@ -1,12 +1,16 @@
+<?php start_section('styles'); ?>
+<link rel="stylesheet" href="<?= base_url('assets/libs/select2/dist/css/select2.min.css') ?>">
+<?php end_section(); ?>
+
 <div class="card bg-light-info shadow-none position-relative overflow-hidden">
     <div class="card-body px-4 py-3">
         <div class="row align-items-center">
             <div class="col-9">
-                <h4 class="fw-semibold mb-8">Role</h4>
+                <h4 class="fw-semibold mb-8">Module</h4>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a class="text-muted " href="<?= base_url('') ?>">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a class="text-muted " href="<?= base_url('roles') ?>">Role</a></li>
+                        <li class="breadcrumb-item"><a class="text-muted " href="<?= base_url('modules') ?>">Module</a></li>
                         <li class="breadcrumb-item" aria-current="page">Edit</li>
                     </ol>
                 </nav>
@@ -23,7 +27,7 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <form class="needs-validation" novalidate action="<?= base_url('roles/update/' . $role['id']) ?>" method="POST">
+            <form class="needs-validation" novalidate action="<?= base_url('modules/update/' . $module['id']) ?>" method="POST">
                 <?= csrf_field() ?>
                 <div class="card-body">
                     <?php if ($success = flash('success')): ?>
@@ -40,14 +44,48 @@
                     <div class="row m-auto">
                         <div class="col-12">
                             <div class="mb-3">
-                                <label for="name" class="control-label col-form-label">Role Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Role Name" value="<?= $role['name'] ?>" required />
+                                <label for="parent_id" class="control-label col-form-label">Parent Module</label>
+                                <select class="form-control select2" id="parent_id" name="parent_id">
+                                    <option value="">-- No Parent --</option>
+                                    <?php foreach ($parent_module as $pm): ?>
+                                        <option value="<?= $pm['id'] ?>" <?= $pm['id'] == $module['parent_id'] ? 'selected' : '' ?>>
+                                            <?= htmlspecialchars(ucwords(str_replace('_', ' ', $pm['name']))) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="name" class="control-label col-form-label">Module Name</label>
+                                <input type="text" class="form-control text-uppercase" id="name" name="name"
+                                    value="<?= htmlspecialchars(str_replace('_', ' ', $module['name'])) ?>" required />
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="description" class="control-label col-form-label">Description</label>
-                                <textarea class="form-control p-7" id="description" name="description" cols="20" rows="1" placeholder="Description"><?= $role['description'] ?></textarea>
+                                <textarea class="form-control p-7 text-capitalize" id="description" name="description" cols="20" rows="1"><?= htmlspecialchars($module['description']) ?></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label class="control-label col-form-label">Assign Permissions</label>
+                            <div class="mb-3">
+                                <?php foreach ($permissions as $perm): ?>
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="perm_<?= $perm['id'] ?>"
+                                            name="permissions[]"
+                                            value="<?= $perm['id'] ?>"
+                                            <?= in_array($perm['id'], array_column($assigned_permissions, 'permission_id')) ? 'checked' : '' ?>>
+
+                                        <label class="form-check-label" for="perm_<?= $perm['id'] ?>">
+                                            <?= htmlspecialchars(ucwords(str_replace('_', ' ', $perm['name']))) ?>
+                                        </label>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -58,7 +96,7 @@
                             <button type="submit" class="btn btn-info rounded-pill px-4 waves-effect waves-light">
                                 Save
                             </button>
-                            <a href="<?= base_url('roles') ?>" class="btn btn-dark rounded-pill px-4 waves-effect waves-light">
+                            <a href="<?= base_url('modules') ?>" class="btn btn-dark rounded-pill px-4 waves-effect waves-light">
                                 Cancel
                             </a>
                         </div>
@@ -69,11 +107,16 @@
 
     </div>
 </div>
-
 <?php start_section('scripts'); ?>
+<script src="<?= base_url('assets/libs/select2/dist/js/select2.full.min.js') ?>"></script>
+<script src="<?= base_url('assets/libs/select2/dist/js/select2.min.js') ?>"></script>
 <script>
     $(document).ready(function() {
-        console.log('This JS is only for the role edit page');
+        console.log('This JS is only for the role create page');
+        $('#parent_id').select2({
+            placeholder: "-- No Parent --",
+            allowClear: true
+        });
         (function() {
             "use strict";
             window.addEventListener(
@@ -102,6 +145,7 @@
                 false
             );
         })();
+
     });
 </script>
 <?php end_section(); ?>

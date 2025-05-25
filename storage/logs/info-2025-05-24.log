@@ -1,0 +1,1082 @@
+[2025-05-24 15:57:03] INFO: Application started
+[2025-05-24 15:57:03] INFO: Request method: GET
+[2025-05-24 15:57:03] INFO: Request URI: /
+[2025-05-24 15:57:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5"}
+[2025-05-24 15:57:03] INFO: Request body: 
+[2025-05-24 15:57:03] INFO: Application started
+[2025-05-24 15:57:03] INFO: Request method: GET
+[2025-05-24 15:57:03] INFO: Request URI: /auth/login
+[2025-05-24 15:57:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=i6derctdbmomdthk801lavmtoh"}
+[2025-05-24 15:57:03] INFO: Request body: 
+[2025-05-24 15:59:28] INFO: Application started
+[2025-05-24 15:59:28] INFO: Request method: POST
+[2025-05-24 15:59:28] INFO: Request URI: /auth/login
+[2025-05-24 15:59:28] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"109","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/auth\/login","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=i6derctdbmomdthk801lavmtoh"}
+[2025-05-24 15:59:28] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&username=admin&password=password
+[2025-05-24 15:59:28] INFO: Attempting to log in user.
+[2025-05-24 15:59:28] INFO: Username: admin
+[2025-05-24 15:59:28] INFO: Password: password
+[2025-05-24 15:59:28] INFO: Creating AuthService instance.
+[2025-05-24 15:59:28] INFO: Attempting to log in user with username: admin
+[2025-05-24 15:59:28] INFO: Fetching user by username: admin
+[2025-05-24 15:59:28] INFO: Fetching permissions for role ID: 1
+[2025-05-24 15:59:28] INFO: User authenticated successfully.
+[2025-05-24 15:59:28] INFO: User session set: {"id":1,"username":"admin","role":"admin","permissions":["approve-dashboard","approve-human_resources","approve-inventory","approve-role","approve-module","create-dashboard","create-human_resources","create-inventory","create-employee","create-department","create-role","create-module","delete-dashboard","delete-human_resources","delete-inventory","delete-employee","delete-role","delete-module","export-dashboard","export-human_resources","export-inventory","export-role","export-module","import-dashboard","import-human_resources","import-inventory","import-role","import-module","reject-dashboard","reject-human_resources","reject-inventory","reject-role","reject-module","submit-dashboard","submit-human_resources","submit-inventory","submit-role","submit-module","update-dashboard","update-human_resources","update-inventory","update-employee","update-stock","update-role","update-module","view-dashboard","view-human_resources","view-inventory","view-employee","view-department","view-warehouse","view-stock","view-role","view-module"]}
+[2025-05-24 15:59:28] INFO: Application started
+[2025-05-24 15:59:28] INFO: Request method: GET
+[2025-05-24 15:59:28] INFO: Request URI: /dashboard
+[2025-05-24 15:59:28] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/auth\/login","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 15:59:28] INFO: Request body: 
+[2025-05-24 16:03:35] INFO: Application started
+[2025-05-24 16:03:35] INFO: Request method: GET
+[2025-05-24 16:03:35] INFO: Request URI: /modules
+[2025-05-24 16:03:35] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:03:35] INFO: Request body: 
+[2025-05-24 16:03:35] INFO: Controller Fetching all modules
+[2025-05-24 16:03:35] INFO: Fetching all modules
+[2025-05-24 16:05:11] INFO: Application started
+[2025-05-24 16:05:11] INFO: Request method: GET
+[2025-05-24 16:05:11] INFO: Request URI: /modules
+[2025-05-24 16:05:11] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:05:11] INFO: Request body: 
+[2025-05-24 16:05:11] INFO: Controller Fetching all modules
+[2025-05-24 16:05:11] INFO: Fetching all modules
+[2025-05-24 16:09:24] INFO: Application started
+[2025-05-24 16:09:24] INFO: Request method: GET
+[2025-05-24 16:09:24] INFO: Request URI: /modules
+[2025-05-24 16:09:24] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:09:24] INFO: Request body: 
+[2025-05-24 16:09:24] INFO: Controller Fetching all modules
+[2025-05-24 16:09:24] INFO: Fetching all modules
+[2025-05-24 16:10:21] INFO: Application started
+[2025-05-24 16:10:21] INFO: Request method: GET
+[2025-05-24 16:10:21] INFO: Request URI: /modules
+[2025-05-24 16:10:21] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:10:21] INFO: Request body: 
+[2025-05-24 16:10:21] INFO: Controller Fetching all modules
+[2025-05-24 16:10:21] INFO: Fetching all modules
+[2025-05-24 16:10:24] INFO: Application started
+[2025-05-24 16:10:24] INFO: Request method: GET
+[2025-05-24 16:10:24] INFO: Request URI: /modules
+[2025-05-24 16:10:24] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:10:24] INFO: Request body: 
+[2025-05-24 16:10:24] INFO: Controller Fetching all modules
+[2025-05-24 16:10:24] INFO: Fetching all modules
+[2025-05-24 16:10:47] INFO: Application started
+[2025-05-24 16:10:47] INFO: Request method: GET
+[2025-05-24 16:10:47] INFO: Request URI: /modules
+[2025-05-24 16:10:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:10:47] INFO: Request body: 
+[2025-05-24 16:10:47] INFO: Controller Fetching all modules
+[2025-05-24 16:10:47] INFO: Fetching all modules
+[2025-05-24 16:10:59] INFO: Application started
+[2025-05-24 16:10:59] INFO: Request method: GET
+[2025-05-24 16:10:59] INFO: Request URI: /modules
+[2025-05-24 16:10:59] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:10:59] INFO: Request body: 
+[2025-05-24 16:10:59] INFO: Controller Fetching all modules
+[2025-05-24 16:10:59] INFO: Fetching all modules
+[2025-05-24 16:11:04] INFO: Application started
+[2025-05-24 16:11:04] INFO: Request method: GET
+[2025-05-24 16:11:04] INFO: Request URI: /modules
+[2025-05-24 16:11:04] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:11:04] INFO: Request body: 
+[2025-05-24 16:11:04] INFO: Controller Fetching all modules
+[2025-05-24 16:11:04] INFO: Fetching all modules
+[2025-05-24 16:11:19] INFO: Application started
+[2025-05-24 16:11:19] INFO: Request method: GET
+[2025-05-24 16:11:19] INFO: Request URI: /modules
+[2025-05-24 16:11:19] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:11:19] INFO: Request body: 
+[2025-05-24 16:11:19] INFO: Controller Fetching all modules
+[2025-05-24 16:11:19] INFO: Fetching all modules
+[2025-05-24 16:11:30] INFO: Application started
+[2025-05-24 16:11:30] INFO: Request method: GET
+[2025-05-24 16:11:30] INFO: Request URI: /modules
+[2025-05-24 16:11:30] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:11:30] INFO: Request body: 
+[2025-05-24 16:11:30] INFO: Controller Fetching all modules
+[2025-05-24 16:11:30] INFO: Fetching all modules
+[2025-05-24 16:11:52] INFO: Application started
+[2025-05-24 16:11:52] INFO: Request method: GET
+[2025-05-24 16:11:52] INFO: Request URI: /modules
+[2025-05-24 16:11:52] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:11:52] INFO: Request body: 
+[2025-05-24 16:11:52] INFO: Controller Fetching all modules
+[2025-05-24 16:11:52] INFO: Fetching all modules
+[2025-05-24 16:15:51] INFO: Application started
+[2025-05-24 16:15:51] INFO: Request method: GET
+[2025-05-24 16:15:51] INFO: Request URI: /modules
+[2025-05-24 16:15:51] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/dashboard","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:15:51] INFO: Request body: 
+[2025-05-24 16:15:51] INFO: Controller Fetching all modules
+[2025-05-24 16:15:51] INFO: Fetching all modules
+[2025-05-24 16:16:09] INFO: Application started
+[2025-05-24 16:16:09] INFO: Request method: GET
+[2025-05-24 16:16:09] INFO: Request URI: /modules/edit/2
+[2025-05-24 16:16:09] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:16:09] INFO: Request body: 
+[2025-05-24 16:16:09] INFO: Controller Editing module ID: 2
+[2025-05-24 16:16:09] INFO: Fetching module ID: 2
+[2025-05-24 16:16:16] INFO: Application started
+[2025-05-24 16:16:16] INFO: Request method: GET
+[2025-05-24 16:16:16] INFO: Request URI: /roles
+[2025-05-24 16:16:16] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/2","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:16:16] INFO: Request body: 
+[2025-05-24 16:16:16] INFO: Controller Fetching all roles
+[2025-05-24 16:16:16] INFO: Fetching all roles
+[2025-05-24 16:16:18] INFO: Application started
+[2025-05-24 16:16:18] INFO: Request method: GET
+[2025-05-24 16:16:18] INFO: Request URI: /roles/create
+[2025-05-24 16:16:18] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:16:18] INFO: Request body: 
+[2025-05-24 16:16:18] INFO: Controller Creating new role
+[2025-05-24 16:16:21] INFO: Application started
+[2025-05-24 16:16:21] INFO: Request method: GET
+[2025-05-24 16:16:21] INFO: Request URI: /roles
+[2025-05-24 16:16:21] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:16:21] INFO: Request body: 
+[2025-05-24 16:16:21] INFO: Controller Fetching all roles
+[2025-05-24 16:16:21] INFO: Fetching all roles
+[2025-05-24 16:16:26] INFO: Application started
+[2025-05-24 16:16:26] INFO: Request method: GET
+[2025-05-24 16:16:26] INFO: Request URI: /modules
+[2025-05-24 16:16:26] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:16:26] INFO: Request body: 
+[2025-05-24 16:16:26] INFO: Controller Fetching all modules
+[2025-05-24 16:16:26] INFO: Fetching all modules
+[2025-05-24 16:37:47] INFO: Application started
+[2025-05-24 16:37:47] INFO: Request method: GET
+[2025-05-24 16:37:47] INFO: Request URI: /modules/create
+[2025-05-24 16:37:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:37:47] INFO: Request body: 
+[2025-05-24 16:37:47] INFO: Controller Creating new module
+[2025-05-24 16:37:47] INFO: Fetching parent module
+[2025-05-24 16:37:47] INFO: Application started
+[2025-05-24 16:37:47] INFO: Request method: GET
+[2025-05-24 16:37:47] INFO: Request URI: /modules
+[2025-05-24 16:37:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:37:47] INFO: Request body: 
+[2025-05-24 16:37:47] INFO: Controller Fetching all modules
+[2025-05-24 16:37:47] INFO: Fetching all modules
+[2025-05-24 16:37:51] INFO: Application started
+[2025-05-24 16:37:51] INFO: Request method: GET
+[2025-05-24 16:37:51] INFO: Request URI: /modules
+[2025-05-24 16:37:51] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:37:51] INFO: Request body: 
+[2025-05-24 16:37:51] INFO: Controller Fetching all modules
+[2025-05-24 16:37:51] INFO: Fetching all modules
+[2025-05-24 16:37:55] INFO: Application started
+[2025-05-24 16:37:55] INFO: Request method: GET
+[2025-05-24 16:37:55] INFO: Request URI: /modules/create
+[2025-05-24 16:37:55] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:37:55] INFO: Request body: 
+[2025-05-24 16:37:55] INFO: Controller Creating new module
+[2025-05-24 16:37:55] INFO: Fetching parent module
+[2025-05-24 16:37:55] INFO: Application started
+[2025-05-24 16:37:55] INFO: Request method: GET
+[2025-05-24 16:37:55] INFO: Request URI: /modules
+[2025-05-24 16:37:55] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:37:55] INFO: Request body: 
+[2025-05-24 16:37:55] INFO: Controller Fetching all modules
+[2025-05-24 16:37:55] INFO: Fetching all modules
+[2025-05-24 16:38:57] INFO: Application started
+[2025-05-24 16:38:57] INFO: Request method: GET
+[2025-05-24 16:38:57] INFO: Request URI: /modules/create
+[2025-05-24 16:38:57] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:38:57] INFO: Request body: 
+[2025-05-24 16:38:57] INFO: Controller Creating new module
+[2025-05-24 16:38:57] INFO: Fetching parent module
+[2025-05-24 16:39:58] INFO: Application started
+[2025-05-24 16:39:58] INFO: Request method: GET
+[2025-05-24 16:39:58] INFO: Request URI: /modules/create
+[2025-05-24 16:39:58] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:39:58] INFO: Request body: 
+[2025-05-24 16:39:58] INFO: Controller Creating new module
+[2025-05-24 16:39:58] INFO: Fetching parent module
+[2025-05-24 16:40:19] INFO: Application started
+[2025-05-24 16:40:19] INFO: Request method: GET
+[2025-05-24 16:40:19] INFO: Request URI: /modules/create
+[2025-05-24 16:40:19] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:40:19] INFO: Request body: 
+[2025-05-24 16:40:19] INFO: Controller Creating new module
+[2025-05-24 16:40:19] INFO: Fetching parent module
+[2025-05-24 16:41:36] INFO: Application started
+[2025-05-24 16:41:36] INFO: Request method: GET
+[2025-05-24 16:41:36] INFO: Request URI: /modules/create
+[2025-05-24 16:41:36] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:41:36] INFO: Request body: 
+[2025-05-24 16:41:36] INFO: Controller Creating new module
+[2025-05-24 16:41:36] INFO: Fetching parent module
+[2025-05-24 16:41:59] INFO: Application started
+[2025-05-24 16:41:59] INFO: Request method: GET
+[2025-05-24 16:41:59] INFO: Request URI: /modules/create
+[2025-05-24 16:41:59] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:41:59] INFO: Request body: 
+[2025-05-24 16:41:59] INFO: Controller Creating new module
+[2025-05-24 16:41:59] INFO: Fetching parent module
+[2025-05-24 16:42:26] INFO: Application started
+[2025-05-24 16:42:26] INFO: Request method: GET
+[2025-05-24 16:42:26] INFO: Request URI: /modules/create
+[2025-05-24 16:42:26] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:42:26] INFO: Request body: 
+[2025-05-24 16:42:26] INFO: Controller Creating new module
+[2025-05-24 16:42:26] INFO: Fetching parent module
+[2025-05-24 16:42:56] INFO: Application started
+[2025-05-24 16:42:56] INFO: Request method: GET
+[2025-05-24 16:42:56] INFO: Request URI: /modules/create
+[2025-05-24 16:42:56] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:42:56] INFO: Request body: 
+[2025-05-24 16:42:56] INFO: Controller Creating new module
+[2025-05-24 16:42:56] INFO: Fetching parent module
+[2025-05-24 16:43:58] INFO: Application started
+[2025-05-24 16:43:58] INFO: Request method: GET
+[2025-05-24 16:43:58] INFO: Request URI: /modules/create
+[2025-05-24 16:43:58] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:43:58] INFO: Request body: 
+[2025-05-24 16:43:58] INFO: Controller Creating new module
+[2025-05-24 16:43:58] INFO: Fetching parent module
+[2025-05-24 16:44:10] INFO: Application started
+[2025-05-24 16:44:10] INFO: Request method: GET
+[2025-05-24 16:44:10] INFO: Request URI: /modules/create
+[2025-05-24 16:44:10] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:44:10] INFO: Request body: 
+[2025-05-24 16:44:10] INFO: Controller Creating new module
+[2025-05-24 16:44:10] INFO: Fetching parent module
+[2025-05-24 16:44:12] INFO: Application started
+[2025-05-24 16:44:12] INFO: Request method: GET
+[2025-05-24 16:44:12] INFO: Request URI: /modules/create
+[2025-05-24 16:44:12] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:44:12] INFO: Request body: 
+[2025-05-24 16:44:12] INFO: Controller Creating new module
+[2025-05-24 16:44:12] INFO: Fetching parent module
+[2025-05-24 16:44:44] INFO: Application started
+[2025-05-24 16:44:44] INFO: Request method: GET
+[2025-05-24 16:44:44] INFO: Request URI: /modules/create
+[2025-05-24 16:44:44] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:44:44] INFO: Request body: 
+[2025-05-24 16:44:44] INFO: Controller Creating new module
+[2025-05-24 16:44:44] INFO: Fetching parent module
+[2025-05-24 16:45:21] INFO: Application started
+[2025-05-24 16:45:21] INFO: Request method: GET
+[2025-05-24 16:45:21] INFO: Request URI: /modules
+[2025-05-24 16:45:21] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:45:21] INFO: Request body: 
+[2025-05-24 16:45:21] INFO: Controller Fetching all modules
+[2025-05-24 16:45:21] INFO: Fetching all modules
+[2025-05-24 16:45:28] INFO: Application started
+[2025-05-24 16:45:28] INFO: Request method: GET
+[2025-05-24 16:45:28] INFO: Request URI: /roles
+[2025-05-24 16:45:28] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:45:28] INFO: Request body: 
+[2025-05-24 16:45:28] INFO: Controller Fetching all roles
+[2025-05-24 16:45:28] INFO: Fetching all roles
+[2025-05-24 16:45:37] INFO: Application started
+[2025-05-24 16:45:37] INFO: Request method: GET
+[2025-05-24 16:45:37] INFO: Request URI: /roles/create
+[2025-05-24 16:45:37] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:45:37] INFO: Request body: 
+[2025-05-24 16:45:37] INFO: Controller Creating new role
+[2025-05-24 16:45:41] INFO: Application started
+[2025-05-24 16:45:41] INFO: Request method: GET
+[2025-05-24 16:45:41] INFO: Request URI: /roles
+[2025-05-24 16:45:41] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:45:41] INFO: Request body: 
+[2025-05-24 16:45:41] INFO: Controller Fetching all roles
+[2025-05-24 16:45:41] INFO: Fetching all roles
+[2025-05-24 16:48:40] INFO: Application started
+[2025-05-24 16:48:40] INFO: Request method: GET
+[2025-05-24 16:48:40] INFO: Request URI: /modules
+[2025-05-24 16:48:40] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:48:40] INFO: Request body: 
+[2025-05-24 16:48:40] INFO: Controller Fetching all modules
+[2025-05-24 16:48:40] INFO: Fetching all modules
+[2025-05-24 16:48:59] INFO: Application started
+[2025-05-24 16:48:59] INFO: Request method: GET
+[2025-05-24 16:48:59] INFO: Request URI: /modules/create
+[2025-05-24 16:48:59] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:48:59] INFO: Request body: 
+[2025-05-24 16:48:59] INFO: Controller Creating new module
+[2025-05-24 16:48:59] INFO: Fetching parent module
+[2025-05-24 16:50:43] INFO: Application started
+[2025-05-24 16:50:43] INFO: Request method: GET
+[2025-05-24 16:50:43] INFO: Request URI: /modules/create
+[2025-05-24 16:50:43] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:50:43] INFO: Request body: 
+[2025-05-24 16:50:43] INFO: Controller Creating new module
+[2025-05-24 16:50:43] INFO: Fetching parent module
+[2025-05-24 16:51:01] INFO: Application started
+[2025-05-24 16:51:01] INFO: Request method: GET
+[2025-05-24 16:51:01] INFO: Request URI: /modules/create
+[2025-05-24 16:51:01] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:51:01] INFO: Request body: 
+[2025-05-24 16:51:01] INFO: Controller Creating new module
+[2025-05-24 16:51:01] INFO: Fetching parent module
+[2025-05-24 16:53:46] INFO: Application started
+[2025-05-24 16:53:46] INFO: Request method: GET
+[2025-05-24 16:53:46] INFO: Request URI: /modules/create
+[2025-05-24 16:53:46] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:53:46] INFO: Request body: 
+[2025-05-24 16:53:46] INFO: Controller Creating new module
+[2025-05-24 16:53:46] INFO: Fetching parent module
+[2025-05-24 16:54:02] INFO: Application started
+[2025-05-24 16:54:02] INFO: Request method: POST
+[2025-05-24 16:54:02] INFO: Request URI: /modules/store
+[2025-05-24 16:54:02] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"139","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:54:02] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=2&name=leave+management&description=leave+management
+[2025-05-24 16:54:02] INFO: Controller Storing new module
+[2025-05-24 16:54:02] INFO: Creating new module: leave_management
+[2025-05-24 16:54:02] INFO: Description: leave management
+[2025-05-24 16:54:02] INFO: Parent ID: 2
+[2025-05-24 16:54:02] INFO: Creating new module: leave_management
+[2025-05-24 16:54:03] INFO: Application started
+[2025-05-24 16:54:03] INFO: Request method: GET
+[2025-05-24 16:54:03] INFO: Request URI: /modules
+[2025-05-24 16:54:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:54:03] INFO: Request body: 
+[2025-05-24 16:54:03] INFO: Controller Fetching all modules
+[2025-05-24 16:54:03] INFO: Fetching all modules
+[2025-05-24 16:54:43] INFO: Application started
+[2025-05-24 16:54:43] INFO: Request method: GET
+[2025-05-24 16:54:43] INFO: Request URI: /modules
+[2025-05-24 16:54:43] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:54:43] INFO: Request body: 
+[2025-05-24 16:54:43] INFO: Controller Fetching all modules
+[2025-05-24 16:54:43] INFO: Fetching all modules
+[2025-05-24 16:54:59] INFO: Application started
+[2025-05-24 16:54:59] INFO: Request method: GET
+[2025-05-24 16:54:59] INFO: Request URI: /modules
+[2025-05-24 16:54:59] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:54:59] INFO: Request body: 
+[2025-05-24 16:54:59] INFO: Controller Fetching all modules
+[2025-05-24 16:54:59] INFO: Fetching all modules
+[2025-05-24 16:59:51] INFO: Application started
+[2025-05-24 16:59:51] INFO: Request method: GET
+[2025-05-24 16:59:51] INFO: Request URI: /modules/edit/8
+[2025-05-24 16:59:51] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 16:59:51] INFO: Request body: 
+[2025-05-24 16:59:51] INFO: Controller Editing module ID: 8
+[2025-05-24 16:59:51] INFO: Fetching module ID: 8
+[2025-05-24 16:59:51] INFO: Fetching parent module
+[2025-05-24 17:00:22] INFO: Application started
+[2025-05-24 17:00:22] INFO: Request method: GET
+[2025-05-24 17:00:22] INFO: Request URI: /modules/edit/8
+[2025-05-24 17:00:22] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:00:22] INFO: Request body: 
+[2025-05-24 17:00:22] INFO: Controller Editing module ID: 8
+[2025-05-24 17:00:22] INFO: Fetching module ID: 8
+[2025-05-24 17:00:22] INFO: Fetching parent module
+[2025-05-24 17:00:28] INFO: Application started
+[2025-05-24 17:00:28] INFO: Request method: GET
+[2025-05-24 17:00:28] INFO: Request URI: /roles
+[2025-05-24 17:00:28] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/8","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:00:28] INFO: Request body: 
+[2025-05-24 17:00:28] INFO: Controller Fetching all roles
+[2025-05-24 17:00:28] INFO: Fetching all roles
+[2025-05-24 17:00:37] INFO: Application started
+[2025-05-24 17:00:37] INFO: Request method: GET
+[2025-05-24 17:00:37] INFO: Request URI: /modules
+[2025-05-24 17:00:37] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/roles","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:00:37] INFO: Request body: 
+[2025-05-24 17:00:37] INFO: Controller Fetching all modules
+[2025-05-24 17:00:37] INFO: Fetching all modules
+[2025-05-24 17:00:42] INFO: Application started
+[2025-05-24 17:00:42] INFO: Request method: GET
+[2025-05-24 17:00:42] INFO: Request URI: /modules/edit/11
+[2025-05-24 17:00:42] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:00:42] INFO: Request body: 
+[2025-05-24 17:00:42] INFO: Controller Editing module ID: 11
+[2025-05-24 17:00:42] INFO: Fetching module ID: 11
+[2025-05-24 17:00:42] INFO: Fetching parent module
+[2025-05-24 17:01:09] INFO: Application started
+[2025-05-24 17:01:09] INFO: Request method: GET
+[2025-05-24 17:01:09] INFO: Request URI: /modules/edit/11
+[2025-05-24 17:01:09] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:01:09] INFO: Request body: 
+[2025-05-24 17:01:09] INFO: Controller Editing module ID: 11
+[2025-05-24 17:01:09] INFO: Fetching module ID: 11
+[2025-05-24 17:01:09] INFO: Fetching parent module
+[2025-05-24 17:01:17] INFO: Application started
+[2025-05-24 17:01:17] INFO: Request method: GET
+[2025-05-24 17:01:17] INFO: Request URI: /modules/edit/11
+[2025-05-24 17:01:17] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:01:17] INFO: Request body: 
+[2025-05-24 17:01:17] INFO: Controller Editing module ID: 11
+[2025-05-24 17:01:17] INFO: Fetching module ID: 11
+[2025-05-24 17:01:17] INFO: Fetching parent module
+[2025-05-24 17:02:03] INFO: Application started
+[2025-05-24 17:02:03] INFO: Request method: GET
+[2025-05-24 17:02:03] INFO: Request URI: /modules/edit/11
+[2025-05-24 17:02:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:03] INFO: Request body: 
+[2025-05-24 17:02:03] INFO: Controller Editing module ID: 11
+[2025-05-24 17:02:03] INFO: Fetching module ID: 11
+[2025-05-24 17:02:03] INFO: Fetching parent module
+[2025-05-24 17:02:07] INFO: Application started
+[2025-05-24 17:02:07] INFO: Request method: POST
+[2025-05-24 17:02:07] INFO: Request URI: /modules/update/11
+[2025-05-24 17:02:07] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"143","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/11","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:07] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=2&name=leave+management&description=leave+management+212
+[2025-05-24 17:02:07] INFO: Controller Updating module ID: 11
+[2025-05-24 17:02:07] INFO: Updating module ID: 11
+[2025-05-24 17:02:07] INFO: New Name: leave_management
+[2025-05-24 17:02:07] INFO: New Description: leave management 212
+[2025-05-24 17:02:07] INFO: New Parent ID: 2
+[2025-05-24 17:02:07] INFO: Updating module ID: 11
+[2025-05-24 17:02:08] INFO: Application started
+[2025-05-24 17:02:08] INFO: Request method: GET
+[2025-05-24 17:02:08] INFO: Request URI: /modules
+[2025-05-24 17:02:08] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/edit\/11","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:08] INFO: Request body: 
+[2025-05-24 17:02:08] INFO: Controller Fetching all modules
+[2025-05-24 17:02:08] INFO: Fetching all modules
+[2025-05-24 17:02:13] INFO: Application started
+[2025-05-24 17:02:13] INFO: Request method: GET
+[2025-05-24 17:02:13] INFO: Request URI: /modules/edit/11
+[2025-05-24 17:02:13] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:13] INFO: Request body: 
+[2025-05-24 17:02:13] INFO: Controller Editing module ID: 11
+[2025-05-24 17:02:13] INFO: Fetching module ID: 11
+[2025-05-24 17:02:13] INFO: Fetching parent module
+[2025-05-24 17:02:17] INFO: Application started
+[2025-05-24 17:02:17] INFO: Request method: POST
+[2025-05-24 17:02:17] INFO: Request URI: /modules/update/11
+[2025-05-24 17:02:17] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"139","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/11","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:17] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=2&name=leave+management&description=leave+management
+[2025-05-24 17:02:17] INFO: Controller Updating module ID: 11
+[2025-05-24 17:02:17] INFO: Updating module ID: 11
+[2025-05-24 17:02:17] INFO: New Name: leave_management
+[2025-05-24 17:02:17] INFO: New Description: leave management
+[2025-05-24 17:02:17] INFO: New Parent ID: 2
+[2025-05-24 17:02:17] INFO: Updating module ID: 11
+[2025-05-24 17:02:17] INFO: Application started
+[2025-05-24 17:02:17] INFO: Request method: GET
+[2025-05-24 17:02:17] INFO: Request URI: /modules
+[2025-05-24 17:02:17] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/edit\/11","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:02:17] INFO: Request body: 
+[2025-05-24 17:02:17] INFO: Controller Fetching all modules
+[2025-05-24 17:02:17] INFO: Fetching all modules
+[2025-05-24 17:03:19] INFO: Application started
+[2025-05-24 17:03:19] INFO: Request method: GET
+[2025-05-24 17:03:19] INFO: Request URI: /modules/create
+[2025-05-24 17:03:19] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:19] INFO: Request body: 
+[2025-05-24 17:03:19] INFO: Controller Creating new module
+[2025-05-24 17:03:19] INFO: Fetching parent module
+[2025-05-24 17:03:25] INFO: Application started
+[2025-05-24 17:03:25] INFO: Request method: POST
+[2025-05-24 17:03:25] INFO: Request URI: /modules/store
+[2025-05-24 17:03:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"114","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:25] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=&name=test&description=tete
+[2025-05-24 17:03:25] INFO: Controller Storing new module
+[2025-05-24 17:03:25] INFO: Creating new module: test
+[2025-05-24 17:03:25] INFO: Description: tete
+[2025-05-24 17:03:25] INFO: Parent ID: 
+[2025-05-24 17:03:25] INFO: Creating new module: test
+[2025-05-24 17:03:25] INFO: Application started
+[2025-05-24 17:03:25] INFO: Request method: GET
+[2025-05-24 17:03:25] INFO: Request URI: /modules/create
+[2025-05-24 17:03:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:25] INFO: Request body: 
+[2025-05-24 17:03:25] INFO: Controller Creating new module
+[2025-05-24 17:03:25] INFO: Fetching parent module
+[2025-05-24 17:03:48] INFO: Application started
+[2025-05-24 17:03:48] INFO: Request method: GET
+[2025-05-24 17:03:48] INFO: Request URI: /modules/create
+[2025-05-24 17:03:48] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:48] INFO: Request body: 
+[2025-05-24 17:03:48] INFO: Controller Creating new module
+[2025-05-24 17:03:48] INFO: Fetching parent module
+[2025-05-24 17:03:53] INFO: Application started
+[2025-05-24 17:03:53] INFO: Request method: POST
+[2025-05-24 17:03:53] INFO: Request URI: /modules/store
+[2025-05-24 17:03:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"115","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:53] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=&name=test&description=testt
+[2025-05-24 17:03:53] INFO: Controller Storing new module
+[2025-05-24 17:03:53] INFO: Creating new module: test
+[2025-05-24 17:03:53] INFO: Description: testt
+[2025-05-24 17:03:53] INFO: Parent ID: 
+[2025-05-24 17:03:53] INFO: Creating new module: test
+[2025-05-24 17:03:53] INFO: Application started
+[2025-05-24 17:03:53] INFO: Request method: GET
+[2025-05-24 17:03:53] INFO: Request URI: /modules/create
+[2025-05-24 17:03:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:03:53] INFO: Request body: 
+[2025-05-24 17:03:53] INFO: Controller Creating new module
+[2025-05-24 17:03:53] INFO: Fetching parent module
+[2025-05-24 17:06:44] INFO: Application started
+[2025-05-24 17:06:44] INFO: Request method: GET
+[2025-05-24 17:06:44] INFO: Request URI: /modules/create
+[2025-05-24 17:06:44] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:06:44] INFO: Request body: 
+[2025-05-24 17:06:44] INFO: Controller Creating new module
+[2025-05-24 17:06:44] INFO: Fetching parent module
+[2025-05-24 17:06:50] INFO: Application started
+[2025-05-24 17:06:50] INFO: Request method: POST
+[2025-05-24 17:06:50] INFO: Request URI: /modules/store
+[2025-05-24 17:06:50] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"114","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:06:50] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=&name=test&description=test
+[2025-05-24 17:06:50] INFO: Controller Storing new module
+[2025-05-24 17:06:50] INFO: Creating new module: test
+[2025-05-24 17:06:50] INFO: Description: test
+[2025-05-24 17:06:50] INFO: Parent ID: 
+[2025-05-24 17:06:50] INFO: Creating new module: test
+[2025-05-24 17:06:50] INFO: Application started
+[2025-05-24 17:06:50] INFO: Request method: GET
+[2025-05-24 17:06:50] INFO: Request URI: /modules
+[2025-05-24 17:06:50] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:06:50] INFO: Request body: 
+[2025-05-24 17:06:50] INFO: Controller Fetching all modules
+[2025-05-24 17:06:50] INFO: Fetching all modules
+[2025-05-24 17:07:30] INFO: Application started
+[2025-05-24 17:07:30] INFO: Request method: GET
+[2025-05-24 17:07:30] INFO: Request URI: /modules
+[2025-05-24 17:07:30] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:07:30] INFO: Request body: 
+[2025-05-24 17:07:30] INFO: Controller Fetching all modules
+[2025-05-24 17:07:30] INFO: Fetching all modules
+[2025-05-24 17:07:38] INFO: Application started
+[2025-05-24 17:07:38] INFO: Request method: POST
+[2025-05-24 17:07:38] INFO: Request URI: /modules/delete
+[2025-05-24 17:07:38] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"82","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:07:38] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&id=12
+[2025-05-24 17:07:38] INFO: Controller Deleting module
+[2025-05-24 17:07:38] INFO: Deleting module ID: 12
+[2025-05-24 17:07:38] INFO: Fetching module ID: 12
+[2025-05-24 17:07:38] INFO: Application started
+[2025-05-24 17:07:38] INFO: Request method: GET
+[2025-05-24 17:07:38] INFO: Request URI: /modules
+[2025-05-24 17:07:38] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:07:38] INFO: Request body: 
+[2025-05-24 17:07:38] INFO: Controller Fetching all modules
+[2025-05-24 17:07:38] INFO: Fetching all modules
+[2025-05-24 17:20:38] INFO: Application started
+[2025-05-24 17:20:38] INFO: Request method: GET
+[2025-05-24 17:20:38] INFO: Request URI: /modules/create
+[2025-05-24 17:20:38] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:20:38] INFO: Request body: 
+[2025-05-24 17:20:38] INFO: Controller Creating new module
+[2025-05-24 17:20:38] INFO: Fetching parent module
+[2025-05-24 17:21:29] INFO: Application started
+[2025-05-24 17:21:29] INFO: Request method: GET
+[2025-05-24 17:21:29] INFO: Request URI: /modules/create
+[2025-05-24 17:21:29] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:29] INFO: Request body: 
+[2025-05-24 17:21:29] INFO: Controller Creating new module
+[2025-05-24 17:21:29] INFO: Fetching parent module
+[2025-05-24 17:21:40] INFO: Application started
+[2025-05-24 17:21:40] INFO: Request method: POST
+[2025-05-24 17:21:40] INFO: Request URI: /modules/store
+[2025-05-24 17:21:40] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"143","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:40] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=&name=role+permission&description=role+permission+system
+[2025-05-24 17:21:40] INFO: Controller Storing new module
+[2025-05-24 17:21:40] INFO: Creating new module: role_permission
+[2025-05-24 17:21:40] INFO: Description: role permission system
+[2025-05-24 17:21:40] INFO: Parent ID: 
+[2025-05-24 17:21:40] INFO: Creating new module: role_permission
+[2025-05-24 17:21:40] INFO: Application started
+[2025-05-24 17:21:40] INFO: Request method: GET
+[2025-05-24 17:21:40] INFO: Request URI: /modules
+[2025-05-24 17:21:40] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/create","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:40] INFO: Request body: 
+[2025-05-24 17:21:40] INFO: Controller Fetching all modules
+[2025-05-24 17:21:40] INFO: Fetching all modules
+[2025-05-24 17:21:49] INFO: Application started
+[2025-05-24 17:21:49] INFO: Request method: GET
+[2025-05-24 17:21:49] INFO: Request URI: /modules/edit/13
+[2025-05-24 17:21:49] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:49] INFO: Request body: 
+[2025-05-24 17:21:49] INFO: Controller Editing module ID: 13
+[2025-05-24 17:21:49] INFO: Fetching module ID: 13
+[2025-05-24 17:21:49] INFO: Fetching parent module
+[2025-05-24 17:21:53] INFO: Application started
+[2025-05-24 17:21:53] INFO: Request method: POST
+[2025-05-24 17:21:53] INFO: Request URI: /modules/update/13
+[2025-05-24 17:21:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"144","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/13","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:53] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&parent_id=8&name=role+permission&description=role+permission+system
+[2025-05-24 17:21:53] INFO: Controller Updating module ID: 13
+[2025-05-24 17:21:53] INFO: Updating module ID: 13
+[2025-05-24 17:21:53] INFO: New Name: role_permission
+[2025-05-24 17:21:53] INFO: New Description: role permission system
+[2025-05-24 17:21:53] INFO: New Parent ID: 8
+[2025-05-24 17:21:53] INFO: Updating module ID: 13
+[2025-05-24 17:21:53] INFO: Application started
+[2025-05-24 17:21:53] INFO: Request method: GET
+[2025-05-24 17:21:53] INFO: Request URI: /modules
+[2025-05-24 17:21:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules\/edit\/13","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:21:53] INFO: Request body: 
+[2025-05-24 17:21:53] INFO: Controller Fetching all modules
+[2025-05-24 17:21:53] INFO: Fetching all modules
+[2025-05-24 17:22:03] INFO: Application started
+[2025-05-24 17:22:03] INFO: Request method: POST
+[2025-05-24 17:22:03] INFO: Request URI: /modules/delete
+[2025-05-24 17:22:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"82","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:22:03] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&id=12
+[2025-05-24 17:22:03] INFO: Controller Deleting module
+[2025-05-24 17:22:03] INFO: Deleting module ID: 12
+[2025-05-24 17:22:03] INFO: Fetching module ID: 12
+[2025-05-24 17:22:03] INFO: Application started
+[2025-05-24 17:22:03] INFO: Request method: GET
+[2025-05-24 17:22:03] INFO: Request URI: /modules
+[2025-05-24 17:22:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:22:03] INFO: Request body: 
+[2025-05-24 17:22:03] INFO: Controller Fetching all modules
+[2025-05-24 17:22:03] INFO: Fetching all modules
+[2025-05-24 17:23:20] INFO: Application started
+[2025-05-24 17:23:20] INFO: Request method: GET
+[2025-05-24 17:23:20] INFO: Request URI: /modules
+[2025-05-24 17:23:20] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:23:20] INFO: Request body: 
+[2025-05-24 17:23:20] INFO: Controller Fetching all modules
+[2025-05-24 17:23:20] INFO: Fetching all modules
+[2025-05-24 17:23:25] INFO: Application started
+[2025-05-24 17:23:25] INFO: Request method: POST
+[2025-05-24 17:23:25] INFO: Request URI: /modules/delete
+[2025-05-24 17:23:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"82","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:23:25] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&id=12
+[2025-05-24 17:23:25] INFO: Controller Deleting module
+[2025-05-24 17:23:25] INFO: Deleting module ID: 12
+[2025-05-24 17:23:25] INFO: Fetching module ID: 12
+[2025-05-24 17:23:25] INFO: Deleting module ID: 12
+[2025-05-24 17:23:25] INFO: Application started
+[2025-05-24 17:23:25] INFO: Request method: GET
+[2025-05-24 17:23:25] INFO: Request URI: /modules
+[2025-05-24 17:23:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:23:25] INFO: Request body: 
+[2025-05-24 17:23:25] INFO: Controller Fetching all modules
+[2025-05-24 17:23:25] INFO: Fetching all modules
+[2025-05-24 17:23:31] INFO: Application started
+[2025-05-24 17:23:31] INFO: Request method: GET
+[2025-05-24 17:23:31] INFO: Request URI: /modules/edit/13
+[2025-05-24 17:23:31] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:23:31] INFO: Request body: 
+[2025-05-24 17:23:31] INFO: Controller Editing module ID: 13
+[2025-05-24 17:23:31] INFO: Fetching module ID: 13
+[2025-05-24 17:23:31] INFO: Fetching parent module
+[2025-05-24 17:23:33] INFO: Application started
+[2025-05-24 17:23:33] INFO: Request method: GET
+[2025-05-24 17:23:33] INFO: Request URI: /modules
+[2025-05-24 17:23:33] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/13","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:23:33] INFO: Request body: 
+[2025-05-24 17:23:33] INFO: Controller Fetching all modules
+[2025-05-24 17:23:33] INFO: Fetching all modules
+[2025-05-24 17:32:10] INFO: Application started
+[2025-05-24 17:32:10] INFO: Request method: GET
+[2025-05-24 17:32:10] INFO: Request URI: /modules
+[2025-05-24 17:32:10] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/modules\/edit\/13","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:32:10] INFO: Request body: 
+[2025-05-24 17:32:10] INFO: Controller Fetching all modules
+[2025-05-24 17:32:10] INFO: Fetching all modules
+[2025-05-24 17:34:10] INFO: Application started
+[2025-05-24 17:34:10] INFO: Request method: GET
+[2025-05-24 17:34:10] INFO: Request URI: /role-permissions
+[2025-05-24 17:34:10] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:34:10] INFO: Request body: 
+[2025-05-24 17:34:26] INFO: Application started
+[2025-05-24 17:34:26] INFO: Request method: GET
+[2025-05-24 17:34:26] INFO: Request URI: /role-permissions
+[2025-05-24 17:34:26] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:34:26] INFO: Request body: 
+[2025-05-24 17:34:54] INFO: Application started
+[2025-05-24 17:34:54] INFO: Request method: GET
+[2025-05-24 17:34:54] INFO: Request URI: /role-permissions
+[2025-05-24 17:34:54] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:34:54] INFO: Request body: 
+[2025-05-24 17:35:34] INFO: Application started
+[2025-05-24 17:35:34] INFO: Request method: GET
+[2025-05-24 17:35:34] INFO: Request URI: /role-permissions
+[2025-05-24 17:35:34] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:35:34] INFO: Request body: 
+[2025-05-24 17:35:34] INFO: Controller Fetching all modules
+[2025-05-24 17:35:34] INFO: Fetching all roles
+[2025-05-24 17:35:34] INFO: Fetching all modules
+[2025-05-24 17:35:34] INFO: Application started
+[2025-05-24 17:35:34] INFO: Request method: GET
+[2025-05-24 17:35:34] INFO: Request URI: /
+[2025-05-24 17:35:34] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:35:34] INFO: Request body: 
+[2025-05-24 17:35:43] INFO: Application started
+[2025-05-24 17:35:43] INFO: Request method: GET
+[2025-05-24 17:35:43] INFO: Request URI: /
+[2025-05-24 17:35:43] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:35:43] INFO: Request body: 
+[2025-05-24 17:35:52] INFO: Application started
+[2025-05-24 17:35:52] INFO: Request method: GET
+[2025-05-24 17:35:52] INFO: Request URI: /role-permissions
+[2025-05-24 17:35:52] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:35:52] INFO: Request body: 
+[2025-05-24 17:36:20] INFO: Application started
+[2025-05-24 17:36:20] INFO: Request method: GET
+[2025-05-24 17:36:20] INFO: Request URI: /role-permissions
+[2025-05-24 17:36:20] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:20] INFO: Request body: 
+[2025-05-24 17:36:20] INFO: Controller Fetching all modules
+[2025-05-24 17:36:20] INFO: Fetching all roles
+[2025-05-24 17:36:20] INFO: Fetching all modules
+[2025-05-24 17:36:20] INFO: Application started
+[2025-05-24 17:36:20] INFO: Request method: GET
+[2025-05-24 17:36:20] INFO: Request URI: /
+[2025-05-24 17:36:20] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:20] INFO: Request body: 
+[2025-05-24 17:36:25] INFO: Application started
+[2025-05-24 17:36:25] INFO: Request method: GET
+[2025-05-24 17:36:25] INFO: Request URI: /role-permissions
+[2025-05-24 17:36:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:25] INFO: Request body: 
+[2025-05-24 17:36:25] INFO: Controller Fetching all modules
+[2025-05-24 17:36:25] INFO: Fetching all roles
+[2025-05-24 17:36:25] INFO: Fetching all modules
+[2025-05-24 17:36:25] INFO: Application started
+[2025-05-24 17:36:25] INFO: Request method: GET
+[2025-05-24 17:36:25] INFO: Request URI: /
+[2025-05-24 17:36:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:25] INFO: Request body: 
+[2025-05-24 17:36:47] INFO: Application started
+[2025-05-24 17:36:47] INFO: Request method: GET
+[2025-05-24 17:36:47] INFO: Request URI: /role-permissions
+[2025-05-24 17:36:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:47] INFO: Request body: 
+[2025-05-24 17:36:47] INFO: Controller Fetching all modules
+[2025-05-24 17:36:47] INFO: Fetching all roles
+[2025-05-24 17:36:47] INFO: Fetching all modules
+[2025-05-24 17:36:47] INFO: Application started
+[2025-05-24 17:36:47] INFO: Request method: GET
+[2025-05-24 17:36:47] INFO: Request URI: /
+[2025-05-24 17:36:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:36:47] INFO: Request body: 
+[2025-05-24 17:37:06] INFO: Application started
+[2025-05-24 17:37:06] INFO: Request method: GET
+[2025-05-24 17:37:06] INFO: Request URI: /role-permissions
+[2025-05-24 17:37:06] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:37:06] INFO: Request body: 
+[2025-05-24 17:37:29] INFO: Application started
+[2025-05-24 17:37:29] INFO: Request method: GET
+[2025-05-24 17:37:29] INFO: Request URI: /role-permissions
+[2025-05-24 17:37:29] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:37:29] INFO: Request body: 
+[2025-05-24 17:37:29] INFO: Controller Fetching all modules
+[2025-05-24 17:37:29] INFO: Fetching all roles
+[2025-05-24 17:37:29] INFO: Fetching all modules
+[2025-05-24 17:37:29] INFO: Application started
+[2025-05-24 17:37:29] INFO: Request method: GET
+[2025-05-24 17:37:29] INFO: Request URI: /
+[2025-05-24 17:37:29] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:37:29] INFO: Request body: 
+[2025-05-24 17:38:05] INFO: Application started
+[2025-05-24 17:38:05] INFO: Request method: GET
+[2025-05-24 17:38:05] INFO: Request URI: /role-permissions
+[2025-05-24 17:38:05] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:05] INFO: Request body: 
+[2025-05-24 17:38:05] INFO: Controller Fetching all modules
+[2025-05-24 17:38:20] INFO: Application started
+[2025-05-24 17:38:20] INFO: Request method: GET
+[2025-05-24 17:38:20] INFO: Request URI: /role-permissions
+[2025-05-24 17:38:20] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:20] INFO: Request body: 
+[2025-05-24 17:38:20] INFO: Controller Fetching all modules
+[2025-05-24 17:38:20] INFO: Fetching all roles
+[2025-05-24 17:38:28] INFO: Application started
+[2025-05-24 17:38:28] INFO: Request method: GET
+[2025-05-24 17:38:28] INFO: Request URI: /role-permissions
+[2025-05-24 17:38:28] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:28] INFO: Request body: 
+[2025-05-24 17:38:28] INFO: Controller Fetching all modules
+[2025-05-24 17:38:28] INFO: Fetching all roles
+[2025-05-24 17:38:36] INFO: Application started
+[2025-05-24 17:38:36] INFO: Request method: GET
+[2025-05-24 17:38:36] INFO: Request URI: /role-permissions
+[2025-05-24 17:38:36] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:36] INFO: Request body: 
+[2025-05-24 17:38:36] INFO: Controller Fetching all modules
+[2025-05-24 17:38:36] INFO: Fetching all roles
+[2025-05-24 17:38:36] INFO: Fetching all modules
+[2025-05-24 17:38:47] INFO: Application started
+[2025-05-24 17:38:47] INFO: Request method: GET
+[2025-05-24 17:38:47] INFO: Request URI: /role-permissions
+[2025-05-24 17:38:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:47] INFO: Request body: 
+[2025-05-24 17:38:47] INFO: Controller Fetching all modules
+[2025-05-24 17:38:47] INFO: Fetching all roles
+[2025-05-24 17:38:47] INFO: Fetching all modules
+[2025-05-24 17:38:47] INFO: Application started
+[2025-05-24 17:38:47] INFO: Request method: GET
+[2025-05-24 17:38:47] INFO: Request URI: /
+[2025-05-24 17:38:47] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:38:47] INFO: Request body: 
+[2025-05-24 17:39:07] INFO: Application started
+[2025-05-24 17:39:07] INFO: Request method: GET
+[2025-05-24 17:39:07] INFO: Request URI: /role-permissions
+[2025-05-24 17:39:07] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:39:07] INFO: Request body: 
+[2025-05-24 17:39:07] INFO: Controller Fetching all modules
+[2025-05-24 17:39:07] INFO: Fetching all roles
+[2025-05-24 17:39:07] INFO: Fetching all modules
+[2025-05-24 17:39:07] INFO: Application started
+[2025-05-24 17:39:07] INFO: Request method: GET
+[2025-05-24 17:39:07] INFO: Request URI: /
+[2025-05-24 17:39:07] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:39:07] INFO: Request body: 
+[2025-05-24 17:39:23] INFO: Application started
+[2025-05-24 17:39:23] INFO: Request method: GET
+[2025-05-24 17:39:23] INFO: Request URI: /role-permissions
+[2025-05-24 17:39:23] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:39:23] INFO: Request body: 
+[2025-05-24 17:39:23] INFO: Controller Fetching all modules
+[2025-05-24 17:39:23] INFO: Fetching all roles
+[2025-05-24 17:39:23] INFO: Fetching all modules
+[2025-05-24 17:39:23] INFO: Application started
+[2025-05-24 17:39:23] INFO: Request method: GET
+[2025-05-24 17:39:23] INFO: Request URI: /
+[2025-05-24 17:39:23] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:39:23] INFO: Request body: 
+[2025-05-24 17:39:48] INFO: Application started
+[2025-05-24 17:39:48] INFO: Request method: GET
+[2025-05-24 17:39:48] INFO: Request URI: /role-permissions
+[2025-05-24 17:39:48] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:39:48] INFO: Request body: 
+[2025-05-24 17:39:48] INFO: Controller Fetching all modules
+[2025-05-24 17:39:48] INFO: Fetching all roles
+[2025-05-24 17:39:48] INFO: Fetching all modules
+[2025-05-24 17:41:18] INFO: Application started
+[2025-05-24 17:41:18] INFO: Request method: GET
+[2025-05-24 17:41:18] INFO: Request URI: /role-permissions
+[2025-05-24 17:41:18] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:41:18] INFO: Request body: 
+[2025-05-24 17:41:18] INFO: Controller Fetching all modules
+[2025-05-24 17:41:18] INFO: Fetching all roles
+[2025-05-24 17:41:18] INFO: Fetching all modules
+[2025-05-24 17:41:33] INFO: Application started
+[2025-05-24 17:41:33] INFO: Request method: GET
+[2025-05-24 17:41:33] INFO: Request URI: /role-permissions
+[2025-05-24 17:41:33] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:41:33] INFO: Request body: 
+[2025-05-24 17:41:33] INFO: Controller Fetching all modules
+[2025-05-24 17:41:33] INFO: Fetching all roles
+[2025-05-24 17:41:33] INFO: Fetching all modules
+[2025-05-24 17:41:57] INFO: Application started
+[2025-05-24 17:41:57] INFO: Request method: GET
+[2025-05-24 17:41:57] INFO: Request URI: /role-permissions
+[2025-05-24 17:41:57] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:41:57] INFO: Request body: 
+[2025-05-24 17:41:57] INFO: Controller Fetching all modules
+[2025-05-24 17:41:57] INFO: Fetching all roles
+[2025-05-24 17:41:57] INFO: Fetching all modules
+[2025-05-24 17:42:13] INFO: Application started
+[2025-05-24 17:42:13] INFO: Request method: GET
+[2025-05-24 17:42:13] INFO: Request URI: /role-permissions
+[2025-05-24 17:42:13] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:42:13] INFO: Request body: 
+[2025-05-24 17:42:13] INFO: Controller Fetching all modules
+[2025-05-24 17:42:13] INFO: Fetching all roles
+[2025-05-24 17:42:13] INFO: Fetching all modules
+[2025-05-24 17:44:19] INFO: Application started
+[2025-05-24 17:44:19] INFO: Request method: GET
+[2025-05-24 17:44:19] INFO: Request URI: /role-permissions
+[2025-05-24 17:44:19] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:44:19] INFO: Request body: 
+[2025-05-24 17:44:19] INFO: Controller Fetching all modules
+[2025-05-24 17:44:19] INFO: Fetching all roles
+[2025-05-24 17:44:19] INFO: Fetching all modules
+[2025-05-24 17:44:22] INFO: Application started
+[2025-05-24 17:44:22] INFO: Request method: POST
+[2025-05-24 17:44:22] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:44:22] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"9","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:44:22] INFO: Request body: role_id=2
+[2025-05-24 17:47:25] INFO: Application started
+[2025-05-24 17:47:25] INFO: Request method: GET
+[2025-05-24 17:47:25] INFO: Request URI: /role-permissions
+[2025-05-24 17:47:25] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:47:25] INFO: Request body: 
+[2025-05-24 17:47:25] INFO: Controller Fetching all modules
+[2025-05-24 17:47:25] INFO: Fetching all roles
+[2025-05-24 17:47:25] INFO: Fetching all modules
+[2025-05-24 17:47:30] INFO: Application started
+[2025-05-24 17:47:30] INFO: Request method: POST
+[2025-05-24 17:47:30] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:47:30] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"9","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:47:30] INFO: Request body: role_id=4
+[2025-05-24 17:48:04] INFO: Application started
+[2025-05-24 17:48:04] INFO: Request method: GET
+[2025-05-24 17:48:04] INFO: Request URI: /role-permissions
+[2025-05-24 17:48:04] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:48:04] INFO: Request body: 
+[2025-05-24 17:48:04] INFO: Controller Fetching all modules
+[2025-05-24 17:48:04] INFO: Fetching all roles
+[2025-05-24 17:48:04] INFO: Fetching all modules
+[2025-05-24 17:48:07] INFO: Application started
+[2025-05-24 17:48:07] INFO: Request method: POST
+[2025-05-24 17:48:07] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:48:07] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"9","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:48:07] INFO: Request body: role_id=4
+[2025-05-24 17:48:38] INFO: Application started
+[2025-05-24 17:48:38] INFO: Request method: GET
+[2025-05-24 17:48:38] INFO: Request URI: /role-permissions
+[2025-05-24 17:48:38] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:48:38] INFO: Request body: 
+[2025-05-24 17:48:38] INFO: Controller Fetching all modules
+[2025-05-24 17:48:38] INFO: Fetching all roles
+[2025-05-24 17:48:38] INFO: Fetching all modules
+[2025-05-24 17:48:54] INFO: Application started
+[2025-05-24 17:48:54] INFO: Request method: POST
+[2025-05-24 17:48:54] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:48:54] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"86","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:48:54] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=4
+[2025-05-24 17:48:54] INFO: Controller Updating role permissions
+[2025-05-24 17:48:54] INFO: Application started
+[2025-05-24 17:48:54] INFO: Request method: GET
+[2025-05-24 17:48:54] INFO: Request URI: /role-permissions
+[2025-05-24 17:48:54] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:48:54] INFO: Request body: 
+[2025-05-24 17:48:54] INFO: Controller Fetching all modules
+[2025-05-24 17:48:54] INFO: Fetching all roles
+[2025-05-24 17:48:54] INFO: Fetching all modules
+[2025-05-24 17:49:08] INFO: Application started
+[2025-05-24 17:49:08] INFO: Request method: GET
+[2025-05-24 17:49:08] INFO: Request URI: /role-permissions
+[2025-05-24 17:49:08] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:49:08] INFO: Request body: 
+[2025-05-24 17:49:08] INFO: Controller Fetching all modules
+[2025-05-24 17:49:08] INFO: Fetching all roles
+[2025-05-24 17:49:08] INFO: Fetching all modules
+[2025-05-24 17:49:11] INFO: Application started
+[2025-05-24 17:49:11] INFO: Request method: POST
+[2025-05-24 17:49:11] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:49:11] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"86","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:49:11] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=4
+[2025-05-24 17:49:11] INFO: Controller Updating role permissions
+[2025-05-24 17:49:11] INFO: Application started
+[2025-05-24 17:49:11] INFO: Request method: GET
+[2025-05-24 17:49:11] INFO: Request URI: /role-permissions?role_id=4
+[2025-05-24 17:49:11] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:49:11] INFO: Request body: 
+[2025-05-24 17:49:11] INFO: Controller Fetching all modules
+[2025-05-24 17:49:11] INFO: Fetching all roles
+[2025-05-24 17:49:11] INFO: Fetching all modules
+[2025-05-24 17:49:11] INFO: Application started
+[2025-05-24 17:49:11] INFO: Request method: GET
+[2025-05-24 17:49:11] INFO: Request URI: /
+[2025-05-24 17:49:11] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:49:11] INFO: Request body: 
+[2025-05-24 17:49:53] INFO: Application started
+[2025-05-24 17:49:53] INFO: Request method: GET
+[2025-05-24 17:49:53] INFO: Request URI: /role-permissions
+[2025-05-24 17:49:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:49:53] INFO: Request body: 
+[2025-05-24 17:49:53] INFO: Controller Fetching all modules
+[2025-05-24 17:49:53] INFO: Fetching all roles
+[2025-05-24 17:49:53] INFO: Fetching all modules
+[2025-05-24 17:50:01] INFO: Application started
+[2025-05-24 17:50:01] INFO: Request method: POST
+[2025-05-24 17:50:01] INFO: Request URI: /role-permissions/update
+[2025-05-24 17:50:01] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Content-Length":"86","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Origin":"http:\/\/localhost:8000","DNT":"1","Upgrade-Insecure-Requests":"1","Content-Type":"application\/x-www-form-urlencoded","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:50:01] INFO: Request body: _csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=2
+[2025-05-24 17:50:01] INFO: Controller Updating role permissions
+[2025-05-24 17:50:01] INFO: Application started
+[2025-05-24 17:50:01] INFO: Request method: GET
+[2025-05-24 17:50:01] INFO: Request URI: /role-permissions?role_id=2
+[2025-05-24 17:50:01] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:50:01] INFO: Request body: 
+[2025-05-24 17:50:01] INFO: Controller Fetching all modules
+[2025-05-24 17:50:01] INFO: Fetching all roles
+[2025-05-24 17:50:01] INFO: Fetching all modules
+[2025-05-24 17:50:01] INFO: Application started
+[2025-05-24 17:50:01] INFO: Request method: GET
+[2025-05-24 17:50:01] INFO: Request URI: /
+[2025-05-24 17:50:01] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:50:01] INFO: Request body: 
+[2025-05-24 17:56:03] INFO: Application started
+[2025-05-24 17:56:03] INFO: Request method: GET
+[2025-05-24 17:56:03] INFO: Request URI: /role-permissions
+[2025-05-24 17:56:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:56:03] INFO: Request body: 
+[2025-05-24 17:56:03] INFO: Controller Fetching all modules
+[2025-05-24 17:56:03] INFO: Fetching all roles
+[2025-05-24 17:56:03] INFO: Fetching all modules
+[2025-05-24 17:56:06] INFO: Application started
+[2025-05-24 17:56:06] INFO: Request method: GET
+[2025-05-24 17:56:06] INFO: Request URI: /role-permissions
+[2025-05-24 17:56:06] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:56:06] INFO: Request body: 
+[2025-05-24 17:56:06] INFO: Controller Fetching all modules
+[2025-05-24 17:56:06] INFO: Fetching all roles
+[2025-05-24 17:56:06] INFO: Fetching all modules
+[2025-05-24 17:56:35] INFO: Application started
+[2025-05-24 17:56:35] INFO: Request method: GET
+[2025-05-24 17:56:35] INFO: Request URI: /role-permissions
+[2025-05-24 17:56:35] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:56:35] INFO: Request body: 
+[2025-05-24 17:56:35] INFO: Controller Fetching all modules
+[2025-05-24 17:56:35] INFO: Fetching all roles
+[2025-05-24 17:56:35] INFO: Fetching all modules
+[2025-05-24 17:56:37] INFO: Application started
+[2025-05-24 17:56:37] INFO: Request method: GET
+[2025-05-24 17:56:37] INFO: Request URI: /role-permissions?_csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=2
+[2025-05-24 17:56:37] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:56:37] INFO: Request body: 
+[2025-05-24 17:56:37] INFO: Controller Fetching all modules
+[2025-05-24 17:56:37] INFO: Fetching all roles
+[2025-05-24 17:56:37] INFO: Fetching all modules
+[2025-05-24 17:57:03] INFO: Application started
+[2025-05-24 17:57:03] INFO: Request method: GET
+[2025-05-24 17:57:03] INFO: Request URI: /role-permissions?_csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=4
+[2025-05-24 17:57:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions?_csrf_token=e3ef360b5224392c0dc341c2517a588b699543107273d321333b17a44c6afb47&role_id=2","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:57:03] INFO: Request body: 
+[2025-05-24 17:57:03] INFO: Controller Fetching all modules
+[2025-05-24 17:57:03] INFO: Fetching all roles
+[2025-05-24 17:57:03] INFO: Fetching all modules
+[2025-05-24 17:57:24] INFO: Application started
+[2025-05-24 17:57:24] INFO: Request method: GET
+[2025-05-24 17:57:24] INFO: Request URI: /role-permissions
+[2025-05-24 17:57:24] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"none","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:57:24] INFO: Request body: 
+[2025-05-24 17:57:24] INFO: Controller Fetching all modules
+[2025-05-24 17:57:24] INFO: Fetching all roles
+[2025-05-24 17:57:24] INFO: Fetching all modules
+[2025-05-24 17:57:27] INFO: Application started
+[2025-05-24 17:57:27] INFO: Request method: GET
+[2025-05-24 17:57:27] INFO: Request URI: /role-permissions?role_id=4
+[2025-05-24 17:57:27] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 17:57:27] INFO: Request body: 
+[2025-05-24 17:57:27] INFO: Controller Fetching all modules
+[2025-05-24 17:57:27] INFO: Fetching all roles
+[2025-05-24 17:57:27] INFO: Fetching all modules
+[2025-05-24 18:15:30] INFO: Application started
+[2025-05-24 18:15:30] INFO: Request method: GET
+[2025-05-24 18:15:30] INFO: Request URI: /role-permissions?role_id=4
+[2025-05-24 18:15:30] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","Cache-Control":"max-age=0","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 18:15:30] INFO: Request body: 
+[2025-05-24 18:15:30] INFO: Controller Fetching all modules
+[2025-05-24 18:15:30] INFO: Fetching all roles
+[2025-05-24 18:15:30] INFO: Fetching all modules
+[2025-05-24 18:15:48] INFO: Application started
+[2025-05-24 18:15:48] INFO: Request method: GET
+[2025-05-24 18:15:48] INFO: Request URI: /role-permissions?role_id=1
+[2025-05-24 18:15:48] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions?role_id=4","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 18:15:48] INFO: Request body: 
+[2025-05-24 18:15:48] INFO: Controller Fetching all modules
+[2025-05-24 18:15:48] INFO: Fetching all roles
+[2025-05-24 18:15:48] INFO: Fetching all modules
+[2025-05-24 18:15:53] INFO: Application started
+[2025-05-24 18:15:53] INFO: Request method: GET
+[2025-05-24 18:15:53] INFO: Request URI: /role-permissions?role_id=2
+[2025-05-24 18:15:53] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions?role_id=1","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 18:15:53] INFO: Request body: 
+[2025-05-24 18:15:53] INFO: Controller Fetching all modules
+[2025-05-24 18:15:53] INFO: Fetching all roles
+[2025-05-24 18:15:53] INFO: Fetching all modules
+[2025-05-24 18:16:03] INFO: Application started
+[2025-05-24 18:16:03] INFO: Request method: GET
+[2025-05-24 18:16:03] INFO: Request URI: /role-permissions?role_id=1
+[2025-05-24 18:16:03] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions?role_id=2","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 18:16:03] INFO: Request body: 
+[2025-05-24 18:16:03] INFO: Controller Fetching all modules
+[2025-05-24 18:16:03] INFO: Fetching all roles
+[2025-05-24 18:16:03] INFO: Fetching all modules
+[2025-05-24 18:16:12] INFO: Application started
+[2025-05-24 18:16:12] INFO: Request method: GET
+[2025-05-24 18:16:12] INFO: Request URI: /role-permissions?role_id=2
+[2025-05-24 18:16:12] INFO: Request headers: {"Host":"localhost:8000","Connection":"keep-alive","sec-ch-ua":"\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A\/Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","DNT":"1","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"navigate","Sec-Fetch-User":"?1","Sec-Fetch-Dest":"document","Referer":"http:\/\/localhost:8000\/role-permissions?role_id=1","Accept-Encoding":"gzip, deflate, br, zstd","Accept-Language":"en-ID,en;q=0.9,id-ID;q=0.8,id;q=0.7,en-GB;q=0.6,en-US;q=0.5","Cookie":"PHPSESSID=9888g4kqe3fdluqja8ona3aptq"}
+[2025-05-24 18:16:12] INFO: Request body: 
+[2025-05-24 18:16:12] INFO: Controller Fetching all modules
+[2025-05-24 18:16:12] INFO: Fetching all roles
+[2025-05-24 18:16:12] INFO: Fetching all modules

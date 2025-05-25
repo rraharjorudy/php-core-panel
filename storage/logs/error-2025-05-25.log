@@ -1,0 +1,1 @@
+[2025-05-25 05:48:35] ERROR: Failed Updating role permissions: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4-5' for key 'role_permissions.PRIMARY'
