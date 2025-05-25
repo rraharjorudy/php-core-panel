@@ -1,0 +1,6 @@
+DB_DRIVER=mysql
+DB_HOST=localhost
+DB_DATABASE=db_skeleton_user
+DB_USERNAME=root
+DB_PASSWORD=
+DB_CHARSET=utf8mb4
