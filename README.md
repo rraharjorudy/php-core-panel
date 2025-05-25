@@ -10,5 +10,7 @@ This project is a scalable, modular monolith system designed using **MVC**
   - Assign roles to users
   - Middleware for route protection
 
-Run the App (PHP built-in server)
-  php -S localhost:8000 -t public
+- Getting Started:
+  - composer install
+  - cp .env.example .env
+  - php -S localhost:8000 -t public
